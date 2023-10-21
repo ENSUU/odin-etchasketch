@@ -3,6 +3,7 @@
 body {
     font-family: 'Playpen Sans', cursive;
     text-align: center; 
+    margin: 0;
 }
 
 button {

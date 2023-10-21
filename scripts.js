@@ -1,6 +1,6 @@
 // Creating the initial 16 x 16 grid
 const gridContainer = document.querySelector('.container');
-gridContainer.style.cssText = `margin: 21px auto; width: 808px; display: flex; flex-wrap: wrap;`
+gridContainer.style.cssText = `margin: 21px auto; width: 960px; display: flex; flex-wrap: wrap; justify-content: center;`;
 
 for (let i = 0; i < 16; i++) {
     const gridSquare = document.createElement('div'); 
@@ -27,15 +27,15 @@ generateButton.addEventListener('click', () => {
     const gridContainer = document.querySelector('.container');
     gridContainer.innerHTML = "";
 
-    gridContainer.style.cssText = `margin: 21px auto; width: ${800 + (2 * userNum)}px; display: flex; flex-wrap: wrap;`
+    gridContainer.style.cssText = `margin: 21px auto; width: 960px; display: flex; flex-wrap: wrap; justify-content: center;`;
 
-    // Creating the 16 x 16 grid
+    // Creating n x n grid
     for (let i = 0; i < userNum * userNum; i++) {
         const gridSquare = document.createElement('div'); 
         gridSquare.addEventListener('mouseover', () => {
             gridSquare.style.backgroundColor = 'skyblue';
         })
-        gridSquare.style.cssText = `width: ${800/userNum}px; height: ${800/userNum}px; border: 1px solid black;`; 
+        gridSquare.style.cssText = `width: ${(960/userNum) - 2}px; height: ${(960/userNum) - 2}px; border: 1px solid black;`; 
         gridContainer.appendChild(gridSquare); 
     }
 })
