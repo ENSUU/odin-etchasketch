@@ -1,6 +1,6 @@
 // Creating the initial 16 x 16 grid
 const gridContainer = document.querySelector('.container');
-gridContainer.style.cssText = `margin: 0 auto; width: 808px; display: flex; flex-wrap: wrap;`
+gridContainer.style.cssText = `margin: 21px auto; width: 808px; display: flex; flex-wrap: wrap;`
 
 for (let i = 0; i < 16; i++) {
     const gridSquare = document.createElement('div'); 
@@ -27,7 +27,7 @@ generateButton.addEventListener('click', () => {
     const gridContainer = document.querySelector('.container');
     gridContainer.innerHTML = "";
 
-    gridContainer.style.cssText = `margin: 0 auto; width: ${800 + (2 * userNum)}px; display: flex; flex-wrap: wrap;`
+    gridContainer.style.cssText = `margin: 21px auto; width: ${800 + (2 * userNum)}px; display: flex; flex-wrap: wrap;`
 
     // Creating the 16 x 16 grid
     for (let i = 0; i < userNum * userNum; i++) {
